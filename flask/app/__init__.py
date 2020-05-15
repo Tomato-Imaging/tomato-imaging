@@ -1,10 +1,8 @@
 from flask import Flask
 
-#UPLOAD_FOLDER = 'D:/uploads'
-
 from os.path import join, dirname, realpath
 
-UPLOAD_FOLDER = join(dirname(realpath(__file__)), 'temporary')
+UPLOAD_FOLDER = join(dirname(realpath(__file__)), 'static/uploads/')
 
 app = Flask(__name__)
 app.secret_key = "secret key"
